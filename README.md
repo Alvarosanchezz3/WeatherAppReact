@@ -12,10 +12,10 @@ This is a React app that provides weather information. By default, information a
 
 ## Weather Service API 🌦️
 
-- ** (`fetchWeather(city)`):** Gets current and forecast weather data for the specified city using the OpenWeather API.
-- ** (`defaultCityWeather()`):** Gets weather data for the default city (Madrid) when the application loads.
-- **(`getUserCoordinates()` ):** Retrieves the user's current geolocation coordinates.
-- ** (`geolocation (latitude, longitude)`):** Gets location information based on latitude and longitude using the reverse geocoding function of the OpenWeather API.
+- (`fetchWeather(city)`):Gets current and forecast weather data for the specified city using the OpenWeather API.
+- (`defaultCityWeather()`):Gets weather data for the default city (Madrid) when the application loads.
+- (`getUserCoordinates()` ):Retrieves the user's current geolocation coordinates.
+- (`geolocation (latitude, longitude)`):Gets location information based on latitude and longitude using the reverse geocoding function of the OpenWeather API.
 
 ## How to run the application 🚀
 1. Clone this repository.
