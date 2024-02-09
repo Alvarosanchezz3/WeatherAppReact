@@ -1,0 +1,65 @@
+.btn-theme {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fafafa;
+  }
+
+.btn-theme:hover {
+    background-color: #58575f7e;
+}
+  
+.btn-theme-img {
+    width: 23px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 18px;
+    position: relative;
+    width: 4em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #404248;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "🌚";
+    font-size: 1.4em;
+    height: 1.14em;
+    border-radius: 20px;
+    left: 0.1em;
+    bottom: 0.3em;
+    transition: .4s;
+  }
+  
+  .switch input:checked + .slider:before {
+    content: "🌞";
+    font-size: 1.4em;
+    transform: translateX(1.2em);
+  }
+  
+  .switch input:checked + .slider {
+    background-color: rgb(28, 151, 238);
+  }

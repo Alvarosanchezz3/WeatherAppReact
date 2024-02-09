@@ -1,0 +1,52 @@
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 3rem;
+}
+
+.days div {
+  display: flex;
+  align-items: center;
+}
+
+.days p {
+  font-weight: 500;
+}
+
+.days div img {
+  width: 110px;
+  margin-right: 6px;
+  padding: 15px;
+}
+
+.days .temps .temperature {
+  font-weight: 400;
+}
+
+.days .temps .temperature .span-bold {
+  font-weight: bold;
+  color: #fafafa;
+}
+
+.days .temps .temperature .span-bold.light-theme {
+  color: #111;
+}
+
+.days span {
+  color: #fafafa;
+}
+
+.days span.light-theme {
+  color: #111;
+}
+
+/* Pantallas más grandes de 1920px */
+@media only screen and (max-width: 1920px) {
+  .days div img {
+      /* Ajusta el tamaño de las imágenes según sea necesario */
+      width: 90px;
+      padding: 15px;
+  }
+}

@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.background,
+.background.light-theme {
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.background.light-theme {
+  background-color: #1b1e25;
+}
+
+.container,
+.container.light-theme {
+  margin: 3% 10% 3% 10%;
+  padding: 1.5rem;
+  background-color: #1b1e25;
+  border-radius: 15px;
+}
+
+.container.light-theme {
+  background-color: #ffffff;
+}
+
+.content, 
+.content.light-theme{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  color: #e4e4e4;
+  gap: 1rem;
+}
+
+.content.light-theme {
+  color: #111;
+}
+
+
+.options-btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.options-btns .btn-options,
+.options-btns .btn-options.light-theme {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fafafa;
+  font-weight: 500;
+}
+
+.options-btns .btn-options:hover {
+  background-color: #58575f7e;
+}
+
+.options-btns .btn-options.light-theme {
+  border: 1px solid #3d3d3d;
+  color: #1b1e25;
+}
+
+.options-btns .btn-options.light-theme:hover {
+  background-color: #cbcacc7e;
+}
+
+.options-btns .btn-options img, svg {
+  width: 23px;
+  height: 23px;
+}
+
+.btn-location svg {
+  margin-right: 6px;
+}
+
+.btn-options svg path.light-theme {
+  fill: #1b1e25;
+}
+
+/* Content left */
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.input-div {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.input-div input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #404248;
+  color: #d9d9d9;
+}
+
+.input-div input.light-theme {
+  background-color: #c2c3c7ab;
+  color: #37383b;
+}
+
+.input-div input.light-theme::placeholder {
+  color: #37383b;
+}
+
+.input-div input::placeholder {
+  color: #d9d9d9;
+}
+
+  /* Content-left1 --> Ciudad, prob lluvia, grados e img */
+
+.content-left1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.content-left1 img {
+  width: 15%;
+  padding: 30px;
+}
+
+.city-temp h1 {
+  font-size: 50px;
+  color: #fafafa;
+  margin-bottom: -5px;
+}
+
+.city-temp h1.light-theme {
+  color: #111;
+}
+
+.city-temp .degrees {
+  font-size: 60px;
+  color: #fafafa;
+}
+
+.city-temp p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a9a9a9;
+}
+
+  /* Content-left2 --> Pronóstico del día de temp y precipitaciones */
+
+.content-left2, .content-left2.light-theme {
+  display: flex;
+  flex-direction: column;
+  background-color: #404248;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.content-left2.light-theme {
+  background-color: #c2c3c7;
+}
+
+.content-left2 .titule, .titule.light-theme {
+  margin-bottom: 30px;
+}
+
+.titule.light-theme {
+  color: #424040;
+}
+
+.content-left2 p, .titule {
+  font-weight: bold;
+}
+
+.content-left2 p.light-theme {
+  color: #424040;
+}
+
+  /* Content-left3 --> Detalles más especif del tiempo */
+
+.content-left3, 
+.content-left3.light-theme {
+  display: flex;
+  flex-direction: column;
+  background-color: #404248;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.content-left3.light-theme {
+  background-color: #c2c3c7;
+}
+
+.content-left3 .titule {
+  margin-bottom: 20px;
+}
+
+.content-left3 .details-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.content-left3 .details-container .details, .details.light-theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #727579;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.content-left3 .details-container .details.light-theme {
+  background-color: #d4d5d7;
+  box-shadow: 1px inset #5c5551;
+}
+
+.content-left3 .details-container .details .details-info p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.content-left3 .details-container .details .details-info h3 {
+  font-size: 23px;
+}
+
+.content-left3 .details-container .details svg {
+  width: 35px;
+  height: 35px;
+}
+
+.content-left3 .details-container .details svg .ruta {
+  fill: #fff;
+}
+
+.content-left3 .details-container .details svg .ruta.light-theme {
+  fill: #5c5551;
+}
+
+/* Content right --> Pronóstico de los 5 siguientes días */
+
+.content-right {
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.week-forecast, .week-forecast.light-theme {
+  padding: 17px 20px;
+  background-color: #404248;
+  border-radius: 10px;
+}
+
+.week-forecast.light-theme {
+  background-color: #c2c3c7;
+}
+
+.week-forecast .titule {
+  color:#e4e4e4;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.week-forecast .titule.light-theme {
+  color: #424040;
+}
+
+@media screen and (max-width: 1920px) {
+  .container,
+  .container.light-theme {
+    margin: 1% 10% 1% 10%;
+  }
+
+  .content-left1 {
+    padding: 10px;
+  }
+
+  .content-left1 img {
+    width: 17%;
+    padding: 20px;
+  }
+
+  .city-temp h1 {
+    font-size: 40px;
+  }
+
+  .city-temp p {
+    font-size: 13px;
+  }
+
+  .city-temp .degrees {
+    font-size: 50px;
+  }
+
+  .content-left2, .content-left2.light-theme {
+    padding: 20px;
+  }
+
+  .content-left2 .titule, .titule.light-theme {
+    margin-bottom: 10px;
+  }
+
+  .content-left3, 
+  .content-left3.light-theme {
+    padding: 20px;
+  }
+
+  .content-left3 .details-container .details .details-info h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .background, .background.light-theme {
+    margin: 19rem 0;
+    background-color: transparent;
+  }
+
+  .container, .container.light-theme {
+    margin: 5%;
+  }
+  
+  .content, 
+  .content.light-theme{
+    flex-direction: column;
+  }
+
+  .content-left, .content-right{
+    width: 100%;
+  }
+
+  .input-div {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .input-div {
+    width: 49%;
+  }
+}
+
+/* Estilos para dispositivos móviles y pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+  .background, .background.light-theme {
+    margin: 17rem 0;
+    background-color: transparent;
+  }
+
+  .container, .container.light-theme {
+    margin: 0;
+  }
+
+  .content, 
+  .content.light-theme{
+    flex-direction: column;
+  }
+
+  .content-left, .content-right{
+    width: 100%;
+  }
+
+  .input-div {
+    width: 48%;
+  }
+
+  .content-left1 {
+    padding: 15px;
+  }
+
+  .content-left1 img {
+    width: 160px;
+  }
+
+  .content-left3 .details-container .details {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .content-left3 .details-container .details .details-info p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-left3 .details-container .details .details-info h3 {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  
+}

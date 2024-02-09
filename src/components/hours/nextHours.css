@@ -1,0 +1,29 @@
+.hours-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+  }
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  
+  .hours img {
+    width: 56%;
+    height: 56%;
+    padding: 10px;
+  }
+
+@media screen and (max-width: 768px) {
+
+  .hours-container {
+    margin: 0px 15px;
+  }
+
+  .hours img {
+    width: 70px;
+  }
+}
